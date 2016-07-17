@@ -14,4 +14,9 @@ __LaTeX__
 
 
 ## TODO
-+ own color code for LaTeX
++ clean color implementation for
+    + LaTeX
+    + Luatex
+    + Markdown
+    + Conky
+    + C
