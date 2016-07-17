@@ -1,63 +1,131 @@
-@import "syntax-variables";
+.comment {
+  color: darken(@light-gray, 10%);
+  font-style: italic;
+}
 
-atom-text-editor, :host {
-  background-color: @syntax-background-color;
-  color: @syntax-text-color;
+.constant {
+    &.numeric {
+        color: @purple;
+    }
+    &.language {
+        color: @yellow;
+    }
+    &.character {
+        color: @purple2;
+    }
+    &.other {
+        color: @orange;
+    }
+}
 
-  .wrap-guide {
-    background-color: @syntax-wrap-guide-color;
+.entity {
+    &.name {
+        &.class,
+        &.type,
+        &.function {
+            color: @blue1;
+        }
+    }
+    &.other.attribute-name {
+        color: @light-gray;
+    }
+}
+
+.invalid {
+    &.deprecated {
+        color: @yellow;
+        text-decoration: underline;
+    }
+    &.illegal {
+        color: @red;
+        text-decoration: underline;
+    }
+}
+
+.keyword {
+  color: @green2;
+  &.control.include.latex,
+  &.control.input.latex,
+  &.control.preamble.latex {
+      color: @orange2;
   }
+}
 
-  .indent-guide {
-    color: @syntax-indent-guide-color;
-  }
+.meta  {
+    color: @blue3;
+    &.group.braces.tex {
+        color: @orange;
+    }
+    &.group,
+    &.preamble.latex {
+        color: @pink;
+    }
+    &.function,
+    &.data,
+    &.row2,
+    &.cell {
+        color: @syntax-text-color;
+    }
+}
 
-  .invisible-character {
-    color: @syntax-invisible-character-color;
-  }
+.none {
+    color: @syntax-text-color;
+}
 
-  .gutter {
-    background-color: @syntax-gutter-background-color;
-    color: @syntax-gutter-text-color;
+.punctuation {
+    &.section.group,
+    &.definition.arguments {
+        color: @blue1;
+    }
+    &.definition.string {
+        color: @yellow;
+        font-weight: bold;
+    }
+}
 
-    .line-number {
-      &.cursor-line {
-        background-color: @syntax-gutter-background-color-selected;
-        color: @syntax-gutter-text-color-selected;
-      }
+.storage {
+  color: @green2;
+}
 
-      &.cursor-line-no-selection {
-        color: @syntax-gutter-text-color-selected;
-      }
+.string {
+    &.quoted {
+        color: @cyan;
+    }
+    &.regexp {
+        color: @red;
+    }
+}
+
+.support {
+  &.function {
+    color: @amber;
+    &.builtin {
+      color: @green2;
     }
   }
-
-  .gutter .line-number.folded,
-  .gutter .line-number:after,
-  .fold-marker:after {
-    color: @light-gray;
-  }
-
-  .invisible {
-    color: @syntax-text-color;
-  }
-
-  .cursor {
-    color: @syntax-cursor-color;
-  }
-
-  .selection .region {
-    background-color: @syntax-selection-color;
+  &.type,
+  &.class {
+    color: darken(@green3, 10%);
   }
 }
 
-atom-text-editor .search-results .marker .region,
-:host .search-results .marker .region {
-  background-color: transparent;
-  border: 1px solid @syntax-result-marker-color;
+.tag {
+  &.entity.name {
+    color: @blue1;
+  }
+  &.punctuation.definition {
+    &.html,
+    &.begin,
+    &.end {
+      color: @light-gray;
+    }
+  }
 }
 
-atom-text-editor .search-results .marker.current-result .region,
-:host .search-results .marker.current-result .region {
-  border: 1px solid @syntax-result-marker-color-selected;
+.variable {
+    color: @yellow;
+
+    &.parameter.latex {
+        color: @teal;
+    }
 }
