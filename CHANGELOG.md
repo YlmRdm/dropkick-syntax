@@ -1,2 +1,2 @@
-## 0.0.1 - First Release
+## 0.0.0 - First Release
 * added colors in base for nicer LaTeX colors
