@@ -2,11 +2,14 @@
   "name": "dropkick-dark-syntax",
   "theme": "syntax",
   "version": "0.0.1",
-  "description": "dark gray syntax theme with bright colors",
+  "description": "dark gray syntax theme with bright colors for one-dark",
   "keywords": [
     "syntax", "theme", "python", "latex"
   ],
-  "repository": "https://github.com/atom/dropkick-syntax",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frodo4fingers/dropkick-syntax"
+    },
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
