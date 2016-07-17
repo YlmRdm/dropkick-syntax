@@ -1,99 +1,53 @@
 .comment {
-  color: darken(@light-gray, 10%);
+  color: @light-gray;
   font-style: italic;
 }
 
+.string {
+  &.quoted {
+    color: @cyan;
+  }
+  &.regexp {
+    color: @red;
+  }
+}
+
 .constant {
-    &.numeric {
-        color: @purple;
-    }
-    &.language {
-        color: @yellow;
-    }
-    &.character {
-        color: @purple2;
-    }
-    &.other {
-        color: @orange;
-    }
+  &.numeric {
+    color: @purple;
+  }
+  &.language {
+    color: @yellow;
+  }
+  &.character,
+  &.other {
+    color: @orange;
+  }
 }
 
-.entity {
-    &.name {
-        &.class,
-        &.type,
-        &.function {
-            color: @blue1;
-        }
-    }
-    &.other.attribute-name {
-        color: @light-gray;
-    }
-}
-
-.invalid {
-    &.deprecated {
-        color: @yellow;
-        text-decoration: underline;
-    }
-    &.illegal {
-        color: @red;
-        text-decoration: underline;
-    }
+.variable {
+  color: @blue1;
 }
 
 .keyword {
   color: @green2;
-  &.control.include.latex,
-  &.control.input.latex,
-  &.control.preamble.latex {
-      color: @orange2;
-  }
-}
-
-.meta  {
-    color: @blue3;
-    &.group.braces.tex {
-        color: @orange;
-    }
-    &.group,
-    &.preamble.latex {
-        color: @pink;
-    }
-    &.function,
-    &.data,
-    &.row2,
-    &.cell {
-        color: @syntax-text-color;
-    }
-}
-
-.none {
-    color: @syntax-text-color;
-}
-
-.punctuation {
-    &.section.group,
-    &.definition.arguments {
-        color: @blue1;
-    }
-    &.definition.string {
-        color: @yellow;
-        font-weight: bold;
-    }
 }
 
 .storage {
   color: @green2;
 }
 
-.string {
-    &.quoted {
-        color: @cyan;
+.entity {
+  &.name {
+    &.class,
+    &.type,
+    &.function {
+      color: @blue1;
     }
-    &.regexp {
-        color: @red;
-    }
+  }
+  &.other.attribute-name {
+    color: @light-gray;
+  }
 }
 
 .support {
@@ -105,7 +59,7 @@
   }
   &.type,
   &.class {
-    color: darken(@green3, 10%);
+    color: @blue3;
   }
 }
 
@@ -122,10 +76,17 @@
   }
 }
 
-.variable {
+.invalid {
+  &.deprecated {
     color: @yellow;
+    text-decoration: underline;
+  }
+  &.illegal {
+    color: @red;
+    text-decoration: underline;
+  }
+}
 
-    &.parameter.latex {
-        color: @teal;
-    }
+.none {
+  color: @syntax-text-color;
 }

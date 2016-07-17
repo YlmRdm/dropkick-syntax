@@ -1,5 +1,17 @@
-# dropkick-syntax theme
+# dropkick dark syntax
 
-A short description of your theme.
++ dark grey syntax theme with bright colors
++ supports python so far
 
-![A screenshot of your theme](https://f.cloud.github.com/assets/69169/2289498/4c3cb0ec-a009-11e3-8dbd-077ee11741e5.gif)
+
+__Python__
+
+![image](https://raw.githubusercontent.com/frodo4fingers/dropkick-syntax/master/screens/python.png)
+
+__LaTeX__
+
+![image](https://raw.githubusercontent.com/frodo4fingers/dropkick-syntax/master/screens/latex.png)
+
+
+## TODO
++ own color code for LaTeX
