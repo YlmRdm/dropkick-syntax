@@ -3,7 +3,7 @@
     color: @syntax-text-color;
     }
     &.name.function {
-      color: @green1;
+      color: @green3;
     }
     // class name color
     &.name.type.class.python {
@@ -30,38 +30,46 @@
       color: @green2;
 
       &.language.python {
-          color: @pink;
+          color: @purple2;
+          font-style: normal;
       }
       &.character.format.placeholder.other.python {
           color: lighten(@green3, 15%);
       }
       &.other.caps.python {
-          color: @teal;
+          color: @turk1;
       }
       &.numeric {
-          color: darken(@green1, 10%);;
+          color: @turk2;
+          font-style: normal;
       }
   }
 
   .keyword {
-      &.control.import.python {
-          color: @orange2;
-      }
-      &.control.flow.python {
+      &.control {
           color: @orange2;
       }
       &.operator.logical.python,
       &.operator.comparison.python,
       &.operator.assignment.python,
       &.operator.arithmetic.python {
-          color: darken(@green3, 10%);
+          color: @green3;
+      }
+      &.codetag {
+          color: lighten(@syntax-text-color, 10%);
+          background-color: @pink;
+          font-weight: bold;
       }
   }
 
   .meta {
       // function name color
       .function.python {
-          color: @amber;
+          color: @green3;
+          font-style: normal;
+      }
+      .function.parameter.python {
+          font-style: normal;
       }
       .function-call-python {
           color: @syntax-text-color;
@@ -86,12 +94,16 @@
       }
       // quotation marks from doc string
       &.definition.string {
-          color: @cyan;
+          color: @blue4;
           font-style: normal;
           font-weight: bolder;
       }
       &.definition.parameters {
           color: @amber;
+          font-style: normal;
+      }
+      &.section.function {
+          font-style: normal;
       }
   }
 
@@ -108,9 +120,8 @@
   }
 
   .string {
-      // actual doc string
       &.quoted.docstring.multi.python {
-          color: @very-light-gray;
+          color: lighten(@syntax-text-color, 10%);
           font-style: italic;
       }
       &.quoted.single.python {
@@ -123,8 +134,10 @@
 
   .support {
       &.function.magic.python {
-          color: @green3;
+          // color: @green3;
+          color: lighten(@pink, 10%);
           font-weight: bold;
+          font-style: normal;
       }
       &.variable.magic.python {
           color: @green3;
@@ -142,9 +155,10 @@
       // self variable
       &.language.special.self.python {
           color: @yellow;
+          font-style: italic;
       }
       &.parameter.function-call.python {
-          color: lighten(@blue2, 10%);
+          color: @blue3;
       }
   }
 }

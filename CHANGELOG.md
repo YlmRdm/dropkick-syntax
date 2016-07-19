@@ -1,2 +1,3 @@
-## 0.0.0 - First Release
-* added colors in base for nicer LaTeX colors
+## 0.2.1
+* patched colors and color names
+* added LaTeX support

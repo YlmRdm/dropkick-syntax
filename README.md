@@ -15,7 +15,6 @@ __LaTeX__
 
 ## TODO
 + clean color implementation for
-    + LaTeX
     + Luatex
     + Markdown
     + Conky

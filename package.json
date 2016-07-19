@@ -7,7 +7,9 @@
     "syntax",
     "theme",
     "python",
-    "latex"
+    "latex",
+    "gray",
+    "bright-colors"
   ],
   "repository": {
     "type": "git",

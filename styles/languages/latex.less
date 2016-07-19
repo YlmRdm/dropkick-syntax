@@ -1,0 +1,76 @@
+.text.tex {
+    .constant {
+        &.character.newline {
+            color: @purple2;
+        }
+        &.other.reference {
+            color: @blue2;
+        }
+        &.other.reference.citation {
+            color: @blue4;
+        }
+    }
+    .meta {
+        &.row2.environment.tabular {
+            color: @syntax-text-color;
+        }
+        &.include {
+            color: @pink;
+        }
+        &.preamble {
+            color: @yellow;
+        }
+        .function.environment.tabular {
+            color: @green3;
+        }
+    }
+    .keyword {
+        &.control {
+            color: @yellow;
+        }
+    }
+    .punctuation {
+        &.definition {
+            &.arguments,
+            &.brackets {
+                color: @purple2;
+            }
+            &.table.cell,
+            &.keyword {
+                color: @green3;
+            }
+        }
+        &.section.group {
+            color: @pink;
+        }
+    }
+    .string {
+        &.other.math {
+            color: @turk1;
+            font-style: italic;
+        }
+    }
+    .support {
+        &.function {
+            &.general {
+                color: @orange1;
+            }
+            &.be {
+                color: @green2;
+            }
+        }
+        &.class {
+            color: @turk2;
+        }
+    }
+    .variable {
+        &.parameter {
+            color: @amber;
+            font-style: italic;
+        }
+        &.parameter.definition {
+            color: @blue2;
+            font-weight: bold;
+        }
+    }
+}
