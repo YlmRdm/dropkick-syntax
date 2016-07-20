@@ -4,14 +4,9 @@
 + supports python so far
 
 
-__Python__
+__color Palette__
 
-![image](https://raw.githubusercontent.com/frodo4fingers/dropkick-syntax/master/screens/python.png)
-
-__LaTeX__
-
-![image](https://raw.githubusercontent.com/frodo4fingers/dropkick-syntax/master/screens/latex.png)
-
+![image](https://raw.githubusercontent.com/frodo4fingers/dropkick-syntax/master/styles/color_palette.png)
 
 ## TODO
 + clean color implementation for
