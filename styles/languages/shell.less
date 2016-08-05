@@ -1,0 +1,96 @@
+.source.shell {
+
+    .comment {
+        &.line {
+            color: lighten(@syntax-text-color, 10%);;
+            background-color: hsla(120, 1%, 59%, 0.3);
+        }
+    }
+
+    .keyword {
+        &.control {
+            color: @orange2;
+        }
+        &.operator {
+            color: @green3;
+            &.list {
+                font-style: italic;
+            }
+        }
+    }
+
+    .meta.scope.for-in-loop {
+        color: @syntax-text-color;
+    }
+
+    .punctuation.definition {
+        &.comment {
+            color: lighten(@syntax-text-color, 10%);
+            background-color: hsla(120, 1%, 59%, 0.3);
+            &.shebang {
+                font-weight: bold;
+            }
+        }
+        &.string {
+            color: @green1;
+        }
+        &.variable {
+            color: @green2;
+        }
+    }
+
+    .string.quoted {
+        &.double {
+            color: @pink;
+            font-style: italic;
+        }
+        &.single {
+            color: @turk2;
+        }
+    }
+
+
+    .support.function {
+        &.builtin {
+            color: @blue3;
+        }
+        &.coreutils {
+            color: @blue4;
+        }
+        &.extras {
+            color: @yellow;
+        }
+        &.options {
+            color: @blue3;
+            // font-weight: bold;
+        }
+        &.vcs {
+            color: @purple2;
+        }
+    }
+
+    .variable {
+        &.definition {
+            &.name {
+                color: @blue2;
+                font-weight: bold;
+            }
+            &.equal {
+                color: @green3;
+            }
+        }
+        &.other {
+            &.loop {
+                color: @blue2;
+                font-style: italic;
+                font-weight: bold;
+            }
+            &.normal {
+                color: @blue2;
+            }
+            &.positional {
+                color: @green2;
+            }
+        }
+    }
+}

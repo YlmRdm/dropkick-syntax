@@ -2,14 +2,17 @@
   "name": "dropkick-dark-syntax",
   "theme": "syntax",
   "version": "0.2.1",
-  "description": "dark gray syntax theme with bright colors for one-dark",
+  "description": "dark gray syntax theme with bright colors suitable one-dark",
   "keywords": [
     "syntax",
     "theme",
     "python",
     "latex",
+    "bibtex",
+    "c/c++",
+    "bash/shell",
     "gray",
-    "bright-colors"
+    "bright colors"
   ],
   "repository": {
     "type": "git",

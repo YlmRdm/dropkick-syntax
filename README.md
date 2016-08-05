@@ -12,4 +12,3 @@ __color Palette__
     + Luatex
     + Markdown
     + Conky
-    + C/C++

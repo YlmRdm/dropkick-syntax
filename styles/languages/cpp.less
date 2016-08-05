@@ -1,0 +1,145 @@
+.source.c,
+.source.cpp {
+    .comment {
+        &.block,
+        &.line {
+            color: lighten(@syntax-text-color, 20%);
+            font-style: italic;
+            // background-color: hsla(120, 1%, 59%, 0.3);
+        }
+    }
+
+    .constant
+        &.numeric {
+            color: @turk2;
+        }
+        &.language {
+            color: @purple2;
+        }
+
+    .entity {
+        &.name {
+            &.type {
+                color: @blue4;
+                font-weight: bold;
+            }
+            &.function {
+                color: @blue2;
+            }
+        }
+    }
+
+    .keyword.control {
+        color: @orange2;
+        &.directive {
+            color: @orange1;
+        }
+        // &.operator.logical.python,
+        // &.operator.comparison.python,
+        // &.operator.assignment.python,
+        // &.operator.arithmetic.python {
+        //     color: @green3;
+        // }
+    }
+
+    .meta {
+        color: @syntax-text-color;
+        &.block {
+            // color: @yellow;
+        }
+        &.class-struct-block {
+            color: @yellow;
+        }
+        &.function {
+            color: @syntax-text-color;
+            &.constructor {
+                color: @syntax-text-color;
+                &.initializer-list {
+                    color: @syntax-text-color;
+                    font-style: italic;
+                }
+            }
+        }
+        &.namespace-block {
+            color: @pink;
+        }
+        &.parens {
+            // color: @pink;
+            font-weight: bold;
+        }
+        &.preprocessor {
+            color: @amber;
+            // font-style: italic;
+        }
+    }
+
+    .punctuation {
+        &.definition {
+            &.comment {
+                color: lighten(@syntax-text-color, 20%);
+                font-weight: bold;
+                // background-color: hsla(120, 1%, 59%, 0.3);
+            }
+            &.parameters {
+                color: @syntax-text-color;
+            }
+            &.string {
+                color: @syntax-text-color;
+                font-style: normal;
+                font-weight: bolder;
+            }
+        }
+        &.section {
+            &.block {
+                color: @purple2;
+            }
+            &.parens {
+                color: @blue4;
+            }
+        }
+    }
+
+    .string {
+        &.quoted {
+            &.double,
+            &.single {
+                color: @turk1;
+            }
+            &.other.lt-gt {
+                color: @syntax-text-color;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .storage {
+        &.modifier {
+            color: @green2;
+            font-style: italic;
+        }
+        &.type {
+            color: @amber;
+            font-style: italic;
+            font-weight: bold;
+            &.modifier {
+                font-weight: normal;
+            }
+        }
+    }
+
+    .support {
+        &.function.any-method {
+            color: @turk2;
+        }
+        &.type.sys-types {
+            color: @blue2;
+        }
+    }
+
+    .variable {
+        &.other {
+            color: @blue2;
+            font-weight: bold;
+        }
+    }
+}
