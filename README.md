@@ -9,5 +9,4 @@ __color Palette__
 ## TODO
 + clean color implementation for
     + Luatex
-    + Markdown
     + Conky

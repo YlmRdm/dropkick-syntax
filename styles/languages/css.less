@@ -1,52 +1,65 @@
 .source.css {
 
-  .punctuation {
-    &.separator,
-    &.terminator {
-      color: @syntax-text-color;
+    .attribute-name.class,
+    .id {
+        color: @orange1;
     }
-    &.property-list.begin,
-    &.property-list.end {
-      color: @red;
-    }
-    &.section.function {
-      color: @blue4;
-    }
-  }
 
-  .entity.name {
-    color: @green1;
-  }
-  .attribute-name.class,
-  .id {
-    color: @orange1;
-  }
-  .pseudo-element,
-  .pseudo-class {
-    color: @orange1;
-  }
+    .constant.numeric {
+        color: @blue4;
+        &.unit {
+            color: @blue4;
+        }
+    }
+    .entity {
+        &.name {
+            color: @green1;
+        }
+        &.other {
+            color: @orange2;
+        }
+    }
 
-  .property-value {
-    color: @blue4;
-  }
-  .constant.numeric {
-    color: @blue4;
-    .unit {
-      color: @blue4;
+    .property-value {
+        color: @blue4;
     }
-  }
-  .rgb-value {
-    color: @blue4;
-  }
-  .support.constant {
-    color: @blue4;
-    &.media {
-      color: @red;
+
+    .pseudo-element,
+    .pseudo-class {
+        color: @orange1;
     }
-  }
-  .variable {
-      color: @syntax-text-color;
-  }
+
+    .punctuation {
+        &.definition  {
+            color: @pink;
+        }
+        &.separator,
+        &.terminator {
+            color: @syntax-text-color;
+        }
+        &.property-list {
+            color: @green3;
+        }
+        &.section.function {
+            color: @blue4;
+        }
+    }
+
+    .rgb-value {
+        color: @blue4;
+    }
+
+    .support.constant {
+        color: @blue4;
+        &.media {
+            color: @red;
+        }
+    }
+
+    .variable {
+        color: @syntax-text-color;
+    }
+
 
   .keyword.important {
     color: @red;

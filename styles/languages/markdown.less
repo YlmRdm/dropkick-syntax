@@ -1,0 +1,65 @@
+.source.gfm {
+
+    .border.pipe {
+        color: @purple1;
+    }
+
+    .comment {
+        &.hr {
+            color: @red;
+        }
+        &.quote {
+            color: @blue2;
+        }
+    }
+
+    .constant.character.escape {
+        color: @amber;
+    }
+
+    .link {
+        color: @orange2;
+    }
+
+    .markup {
+        &.bold {
+            font-weight: bold;
+        }
+        &.heading {
+            color: @purple2;
+            &.marker {
+                color: @yellow;
+            }
+        }
+        &.italic {
+            font-style: italic;
+        }
+        &.raw {
+            color: lighten(@syntax-text-color, 10%);
+            background-color: hsla(143, 4%, 79%, 0.27);
+        }
+        &.underline.link {
+            color: @orange1;
+            font-style: italic;
+        }
+    }
+
+    .support.quote {
+        color: @blue3;
+        font-weight: bold;
+    }
+
+    .table {
+        color: @green3;
+    }
+
+    .variable {
+        &.ordered.list {
+            color: @turk1;
+        }
+        &.unordered.list {
+            color: @turk2;
+        }
+    }
+
+}

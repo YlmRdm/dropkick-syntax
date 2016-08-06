@@ -4,13 +4,9 @@
   "version": "0.3.0",
   "description": "dark gray syntax theme with bright colors suitable one-dark",
   "keywords": [
+    "dark",
     "syntax",
     "theme",
-    "python",
-    "latex",
-    "bibtex",
-    "c/c++",
-    "bash/shell",
     "gray",
     "bright colors"
   ],
