@@ -1,4 +1,4 @@
-## 0.2.2
+## 0.4.1
 * adapted new syntax
 
 ## 0.2.1
