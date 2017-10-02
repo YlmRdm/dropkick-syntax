@@ -1,63 +1,63 @@
-.source.gfm {
+.syntax--source.syntax--gfm {
 
-    .border.pipe {
+    .syntax--border.syntax--pipe {
         color: @purple1;
     }
 
-    .comment {
-        &.hr {
+    .syntax--comment {
+        &.syntax--hr {
             color: @red;
         }
-        &.quote {
+        &.syntax--quote {
             color: @blue2;
         }
     }
 
-    .constant.character.escape {
+    .syntax--constant.syntax--character.syntax--escape {
         color: @amber;
     }
 
-    .link {
+    .syntax--link {
         color: @orange2;
     }
 
-    .markup {
-        &.bold {
+    .syntax--markup {
+        &.syntax--bold {
             font-weight: bold;
         }
-        &.heading {
+        &.syntax--heading {
             color: @purple2;
-            &.marker {
+            &.syntax--marker {
                 color: @yellow;
             }
         }
-        &.italic {
+        &.syntax--italic {
             font-style: italic;
         }
-        &.raw {
+        &.syntax--raw {
             color: lighten(@syntax-text-color, 10%);
             background-color: hsla(143, 4%, 79%, 0.27);
         }
-        &.underline.link {
+        &.syntax--underline.syntax--link {
             color: @orange1;
             font-style: italic;
         }
     }
 
-    .support.quote {
+    .syntax--support.syntax--quote {
         color: @blue3;
         font-weight: bold;
     }
 
-    .table {
+    .syntax--table {
         color: @green3;
     }
 
-    .variable {
-        &.ordered.list {
+    .syntax--variable {
+        &.syntax--ordered.syntax--list {
             color: @turk1;
         }
-        &.unordered.list {
+        &.syntax--unordered.syntax--list {
             color: @turk2;
         }
     }

@@ -1,76 +1,76 @@
-.source.css {
+.syntax--source.syntax--css {
 
-    .attribute-name.class,
-    .id {
+    .syntax--attribute-name.syntax--class,
+    .syntax--id {
         color: @orange1;
     }
 
-    .constant.numeric {
+    .syntax--constant.syntax--numeric {
         color: @blue4;
-        &.unit {
+        &.syntax--unit {
             color: @blue4;
         }
     }
-    .entity {
-        &.name {
+    .syntax--entity {
+        &.syntax--name {
             color: @green1;
         }
-        &.other {
+        &.syntax--other {
             color: @orange2;
         }
     }
 
-    .property-value {
+    .syntax--property-value {
         color: @blue4;
     }
 
-    .pseudo-element,
-    .pseudo-class {
+    .syntax--pseudo-element,
+    .syntax--pseudo-class {
         color: @orange1;
     }
 
-    .punctuation {
-        &.definition  {
+    .syntax--punctuation {
+        &.syntax--definition  {
             color: @pink;
         }
-        &.separator,
-        &.terminator {
+        &.syntax--separator,
+        &.syntax--terminator {
             color: @syntax-text-color;
         }
-        &.property-list {
+        &.syntax--property-list {
             color: @green3;
         }
-        &.section.function {
+        &.syntax--section.syntax--function {
             color: @blue4;
         }
     }
 
-    .rgb-value {
+    .syntax--rgb-value {
         color: @blue4;
     }
 
-    .support.constant {
+    .syntax--support.syntax--constant {
         color: @blue4;
-        &.media {
+        &.syntax--media {
             color: @red;
         }
     }
 
-    .variable {
+    .syntax--variable {
         color: @syntax-text-color;
     }
 
 
-  .keyword.important {
+  .syntax--keyword.syntax--important {
     color: @red;
   }
 
 }
 // Less/Sass should have their own files,
 // but for just a single override, here should be fine too
-.source.less,
-.source.scss {
-  .keyword.unit {
+.syntax--source.syntax--less,
+.syntax--source.syntax--scss {
+  .syntax--keyword.syntax--unit {
     color: @blue4;
   }
 }

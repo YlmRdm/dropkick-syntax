@@ -1,81 +1,81 @@
-.text.tex {
-    .constant {
-        &.character.newline {
+.syntax--text.syntax--tex {
+    .syntax--constant {
+        &.syntax--character.syntax--newline {
             color: @purple2;
         }
-        &.other.reference {
+        &.syntax--other.syntax--reference {
             color: @blue2;
         }
-        &.other.reference.citation {
+        &.syntax--other.syntax--reference.syntax--citation {
             color: @blue4;
         }
     }
-    .meta {
-        &.row2.environment.tabular {
+    .syntax--meta {
+        &.syntax--row2.syntax--environment.syntax--tabular {
             color: @syntax-text-color;
         }
-        &.include {
+        &.syntax--include {
             color: @pink;
         }
-        &.preamble {
+        &.syntax--preamble {
             color: @yellow;
         }
-        .function.environment.tabular {
+        .syntax--function.syntax--environment.syntax--tabular {
             color: @green3;
         }
     }
-    .keyword {
-        &.control {
+    .syntax--keyword {
+        &.syntax--control {
             color: @yellow;
         }
     }
-    .punctuation {
-        &.definition {
-            &.arguments,
-            &.brackets {
+    .syntax--punctuation {
+        &.syntax--definition {
+            &.syntax--arguments,
+            &.syntax--brackets {
                 color: @purple2;
             }
-            &.table.cell,
-            &.keyword {
+            &.syntax--table.syntax--cell,
+            &.syntax--keyword {
                 color: @green3;
             }
         }
-        &.section.group {
+        &.syntax--section.syntax--group {
             color: @pink;
         }
     }
-    .storage {
-        &.type.class {
+    .syntax--storage {
+        &.syntax--type.syntax--class {
             color: lighten(@syntax-text-color, 10%);
             background-color: @pink;
             font-weight: bold;
         }
     }
-    .string {
-        &.other.math {
+    .syntax--string {
+        &.syntax--other.syntax--math {
             color: @turk1;
             font-style: italic;
         }
     }
-    .support {
-        &.function {
-            &.general {
+    .syntax--support {
+        &.syntax--function {
+            &.syntax--general {
                 color: @orange1;
             }
-            &.be {
+            &.syntax--be {
                 color: @green2;
             }
         }
-        &.class {
+        &.syntax--class {
             color: @turk2;
         }
     }
-    .variable {
-        &.parameter {
+    .syntax--variable {
+        &.syntax--parameter {
             color: @amber;
             font-style: italic;
         }
-        &.parameter.definition {
+        &.syntax--parameter.syntax--definition {
             color: @blue2;
             font-weight: bold;
         }

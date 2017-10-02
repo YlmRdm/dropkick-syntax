@@ -1,163 +1,163 @@
-.source.python {
-  .entity {
+.syntax--source.syntax--python {
+  .syntax--entity {
     color: @syntax-text-color;
     }
-    &.name.function {
+    &.syntax--name.syntax--function {
       color: @green3;
     }
     // class name color
-    &.name.type.class.python {
+    &.syntax--name.syntax--type.syntax--class.syntax--python {
       color: @blue1;
       font-weight: normal;
       font-style: normal;
     }
 
-    &.other {
+    &.syntax--other {
       color: darken(@yellow, 20%);
     }
-    &.class {
+    &.syntax--class {
         color: @green3;
     }
   //}
 
-  .comment {
-      &.line.number-sign.python {
+  .syntax--comment {
+      &.syntax--line.syntax--number-sign.syntax--python {
           color: darken(@light-gray, 5%);
       }
   }
 
-  .constant {
+  .syntax--constant {
       color: @green2;
 
-      &.language.python {
+      &.syntax--language.syntax--python {
           color: @purple2;
           font-style: normal;
       }
-      &.character.format.placeholder.other.python {
+      &.syntax--character.syntax--format.syntax--placeholder.syntax--other.syntax--python {
           color: lighten(@green3, 15%);
       }
-      &.other.caps.python {
+      &.syntax--other.syntax--caps.syntax--python {
           color: @turk1;
       }
-      &.numeric {
+      &.syntax--numeric {
           color: @turk2;
           font-style: normal;
       }
   }
 
-  .keyword {
-      &.control {
+  .syntax--keyword {
+      &.syntax--control {
           color: @orange2;
       }
-      &.operator.logical.python,
-      &.operator.comparison.python,
-      &.operator.assignment.python,
-      &.operator.arithmetic.python {
+      &.syntax--operator.syntax--logical.syntax--python,
+      &.syntax--operator.syntax--comparison.syntax--python,
+      &.syntax--operator.syntax--assignment.syntax--python,
+      &.syntax--operator.syntax--arithmetic.syntax--python {
           color: @green3;
       }
-      &.codetag {
+      &.syntax--codetag {
           color: lighten(@syntax-text-color, 10%);
           background-color: @pink;
           font-weight: bold;
       }
   }
 
-  .meta {
+  .syntax--meta {
       // function name color
-      .function.python {
+      .syntax--function.syntax--python {
           color: @green3;
           font-style: normal;
       }
-      .function.parameter.python {
+      .syntax--function.syntax--parameter.syntax--python {
           font-style: normal;
       }
-      .function-call-python {
+      .syntax--function-call-python {
           color: @syntax-text-color;
       }
       // class
-      .class.python {
+      .syntax--class.syntax--python {
           color: @amber;
           font-style: italic;
           font-weight: bold;
       }
-      .class.inheritance.python {
+      .syntax--class.syntax--inheritance.syntax--python {
           font-weight: normal;
       }
-      &.require {
+      &.syntax--require {
           color: @red;
       }
   }
 
-  .punctuation {
-      &.definition.inheritance {
+  .syntax--punctuation {
+      &.syntax--definition.syntax--inheritance {
           color: @blue1;
       }
       // quotation marks from doc string
-      &.definition.string {
+      &.syntax--definition.syntax--string {
           color: @blue4;
           font-style: normal;
           font-weight: bolder;
       }
-      &.definition.parameters {
+      &.syntax--definition.syntax--parameters {
           color: @amber;
           font-style: normal;
       }
-      &.section.function {
+      &.syntax--section.syntax--function {
           font-style: normal;
       }
   }
 
-  .storage {
+  .syntax--storage {
       color: @syntax-text-color;
 
-      &.type.function.python {
+      &.syntax--type.syntax--function.syntax--python {
           color: @blue2;
           font-style: italic;
       }
-      &.class.inheritance {
+      &.syntax--class.syntax--inheritance {
           color: @syntax-text-color;
       }
   }
 
-  .string {
-      &.quoted.docstring.multi {
+  .syntax--string {
+      &.syntax--quoted.syntax--docstring.syntax--multi {
           color: lighten(@syntax-text-color, 10%);
           font-style: italic;
       }
-      &.quoted.single {
+      &.syntax--quoted.syntax--single {
           color: @turk1;
       }
-      &.regexp {
+      &.syntax--regexp {
           color: @red;
       }
   }
 
-  .support {
-      &.function.magic.python {
+  .syntax--support {
+      &.syntax--function.syntax--magic.syntax--python {
           // color: @green3;
           color: lighten(@pink, 10%);
           font-weight: bold;
           font-style: normal;
       }
-      &.variable.magic.python {
+      &.syntax--variable.syntax--magic.syntax--python {
           color: @green3;
       }
-      &.function.builtin,
-      &.type.python {
+      &.syntax--function.syntax--builtin,
+      &.syntax--type.syntax--python {
           color: @blue3;
       }
   }
 
-  .variable {
-      &.parameter.function.language.python {
+  .syntax--variable {
+      &.syntax--parameter.syntax--function.syntax--language.syntax--python {
           color: @syntax-text-color
       }
       // self variable
-      &.language.special.self.python {
+      &.syntax--language.syntax--special.syntax--self.syntax--python {
           color: @yellow;
           font-style: italic;
       }
-      &.parameter.function-call.python {
+      &.syntax--parameter.syntax--function-call.syntax--python {
           color: @blue3;
       }
   }

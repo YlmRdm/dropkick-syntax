@@ -1,94 +1,94 @@
-.source.shell {
+.syntax--source.syntax--shell {
 
-    .comment {
-        &.line {
-            color: lighten(@syntax-text-color, 10%);;
+    .syntax--comment {
+        &.syntax--line {
+            color: lighten(@syntax-text-color, 10%);
             background-color: hsla(120, 1%, 59%, 0.3);
         }
     }
 
-    .keyword {
-        &.control {
+    .syntax--keyword {
+        &.syntax--control {
             color: @orange2;
         }
-        &.operator {
+        &.syntax--operator {
             color: @green3;
-            &.list {
+            &.syntax--list {
                 font-style: italic;
             }
         }
     }
 
-    .meta.scope.for-in-loop {
+    .syntax--meta.syntax--scope.syntax--for-in-loop {
         color: @syntax-text-color;
     }
 
-    .punctuation.definition {
-        &.comment {
+    .syntax--punctuation.syntax--definition {
+        &.syntax--comment {
             color: lighten(@syntax-text-color, 10%);
             background-color: hsla(120, 1%, 59%, 0.3);
-            &.shebang {
+            &.syntax--shebang {
                 font-weight: bold;
             }
         }
-        &.string {
+        &.syntax--string {
             color: @green1;
         }
-        &.variable {
+        &.syntax--variable {
             color: @green2;
         }
     }
 
-    .string.quoted {
-        &.double {
+    .syntax--string.syntax--quoted {
+        &.syntax--double {
             color: @pink;
             font-style: italic;
         }
-        &.single {
+        &.syntax--single {
             color: @turk2;
         }
     }
 
 
-    .support.function {
-        &.builtin {
+    .syntax--support.syntax--function {
+        &.syntax--builtin {
             color: @blue3;
         }
-        &.coreutils {
+        &.syntax--coreutils {
             color: @blue4;
         }
-        &.extras {
+        &.syntax--extras {
             color: @yellow;
         }
-        &.options {
+        &.syntax--options {
             color: @blue3;
             // font-weight: bold;
         }
-        &.vcs {
+        &.syntax--vcs {
             color: @purple2;
         }
     }
 
-    .variable {
-        &.definition {
-            &.name {
+    .syntax--variable {
+        &.syntax--definition {
+            &.syntax--name {
                 color: @blue2;
                 font-weight: bold;
             }
-            &.equal {
+            &.syntax--equal {
                 color: @green3;
             }
         }
-        &.other {
-            &.loop {
+        &.syntax--other {
+            &.syntax--loop {
                 color: @blue2;
                 font-style: italic;
                 font-weight: bold;
             }
-            &.normal {
+            &.syntax--normal {
                 color: @blue2;
             }
-            &.positional {
+            &.syntax--positional {
                 color: @green2;
             }
         }
